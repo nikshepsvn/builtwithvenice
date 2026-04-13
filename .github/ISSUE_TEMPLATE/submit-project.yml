@@ -1,0 +1,103 @@
+name: Submit a Project
+description: Submit your project to be featured on Built with Venice
+title: "[Project] "
+labels: ["submission"]
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      placeholder: e.g. VeniceStats
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-type
+    attributes:
+      label: Project Type
+      options:
+        - Website
+        - GitHub Repo
+    validations:
+      required: true
+
+  - type: input
+    id: project-url
+    attributes:
+      label: Project URL
+      placeholder: https://myproject.com or https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: github-owner
+    attributes:
+      label: GitHub Owner (for repos only)
+      description: The owner portion of github.com/owner/repo
+      placeholder: e.g. nikshepsvn
+
+  - type: input
+    id: github-repo
+    attributes:
+      label: GitHub Repo Name (for repos only)
+      description: The repo portion of github.com/owner/repo
+      placeholder: e.g. openvenice
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: "Ecosystem = tools/SDKs built for the Venice community (e.g. dashboards, CLIs, libraries). Powered by Venice = apps that use the Venice API (e.g. chatbots, research tools)."
+      options:
+        - "Ecosystem (built for the Venice community)"
+        - "Powered by Venice (uses the Venice API)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 1-2 sentences about what the project does
+      placeholder: Describe your project...
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated (e.g. SDK, Python, Analytics)
+      placeholder: Tag1, Tag2, Tag3
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Primary Language (for GitHub repos)
+      placeholder: e.g. TypeScript, Python
+
+  - type: input
+    id: submitted-by
+    attributes:
+      label: Your Name / Handle
+      placeholder: e.g. @username
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (for websites)
+      description: Drag and drop a screenshot here. The maintainers will add it to the site for you.
+
+  - type: checkboxes
+    id: quality
+    attributes:
+      label: Quality Checklist
+      options:
+        - label: This project is publicly accessible
+          required: true
+        - label: This project offers functionality beyond the base Venice platform
+          required: true
+        - label: I understand that listing does not imply endorsement by Venice AI
+          required: true
