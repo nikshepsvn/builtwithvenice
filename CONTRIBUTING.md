@@ -2,18 +2,20 @@
 
 A community-curated showcase of projects, tools, and content built on the Venice AI ecosystem.
 
+Maintained by the Venice DevRel team — **Sabrina Aquino** and **Josh Meyer**.
+
 ## How to submit
 
 ### Option 1: Submit via form (easiest)
 
-[**Open a submission**](https://github.com/nikshepsvn/builtwithvenice/issues/new?template=submit-project.yml&title=%5BProject%5D+) — fill out the form and we'll add it for you.
+[**Open a submission**](https://github.com/nikshepsvn/builtwithvenice/issues/new?template=submit-project.yml&title=%5BProject%5D+) — fill out the form and the maintainers will add it for you.
 
 ### Option 2: Submit via pull request
 
 1. Fork this repo
 2. Add your entry to `src/data/projects.ts`
 3. Open a pull request with one entry per PR
-4. The team reviews and merges
+4. Sabrina or Josh reviews and merges
 
 ## Project categories
 
