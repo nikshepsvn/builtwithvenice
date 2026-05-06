@@ -60,7 +60,7 @@ Also read, fresh, the current schemas — don't rely on cached knowledge:
 | `submit-project`      | label `submission` or title starts with `[Project]`             |
 | `submit-cookbook`     | mentions cookbook/recipe/tutorial in title or body              |
 | `submit-event`        | mentions hackathon, meetup, conference, workshop                |
-| `submit-spotlight`    | mentions video, interview, demo                                 |
+| `submit-demo`         | mentions clip, screenshot, post, X thread, Loom, demo video     |
 | `bug`                 | references a component, UI breakage, or broken link             |
 | `question`            | asks how to contribute / how the site works                     |
 | `spam`                | empty body, marketing copy, no project                          |
@@ -73,7 +73,7 @@ Also read, fresh, the current schemas — don't rely on cached knowledge:
 | `submit-project`      | `src/data/projects.ts`                       |
 | `submit-cookbook`     | `src/data/cookbooks.ts`                      |
 | `submit-event`        | `src/data/events.ts`                         |
-| `submit-spotlight`    | `src/data/spotlights.ts`                     |
+| `submit-demo`         | `src/data/demos.ts`                          |
 | `preview-image`       | `public/preview-*.png`                       |
 | `infra`               | `package.json`, `tsconfig*`, `vite.config.*` |
 | `docs`                | `README.md`, `CONTRIBUTING.md`               |
@@ -227,8 +227,8 @@ All data lives in `src/data/`. Load these files fresh each run — the schema ma
 - `src/data/projects.ts` — `Project = WebsiteProject | RepoProject | XAccountProject | TokenProject`.
 - `src/data/cookbooks.ts` — `Cookbook` with `difficulty`, `readTime`, `author`, `tags`.
 - `src/data/events.ts` — `VeniceEvent` with `kind`, `status`, `startDate`, `location`, `host`.
-- `src/data/spotlights.ts` — `Spotlight` with `builder`, `role`, `duration`.
+- `src/data/demos.ts` — `Demo` with `builder`, `url`, `thumbnail?`, `tags`.
 
 Valid `SocialKind` values: `x, github, website, farcaster, warpcast, instagram, telegram, discord, youtube, tiktok, token`.
 
-A machine-readable subset of the project schema is at <https://builtwithvenice.com/.well-known/agent-submit.json>.
+A machine-readable subset of the project schema is at <https://builtwithvenice.ai/.well-known/agent-submit.json>.
