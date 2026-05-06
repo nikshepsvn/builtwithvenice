@@ -21,7 +21,7 @@ The maintainer says things like:
 - "Which of these issues should I close?"
 - "Draft approval comments for the ready ones."
 
-Do NOT use this skill to write new projects, cookbooks, events, or spotlights — that's the job of `agent-skill.md`.
+Do NOT use this skill to write new projects, cookbooks, events, or demos — that's the job of `agent-skill.md`.
 
 ---
 
@@ -49,7 +49,7 @@ Also read, fresh, the current schemas — don't rely on cached knowledge:
 - `src/data/projects.ts`
 - `src/data/cookbooks.ts`
 - `src/data/events.ts`
-- `src/data/spotlights.ts`
+- `src/data/demos.ts`
 
 ### 2. Classify each item
 
