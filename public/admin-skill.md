@@ -94,7 +94,7 @@ For every submission (issue or PR), check required signals. Missing a **required
 **Nice-to-have**
 - Tags reuse existing tags in the repo where reasonable.
 - `socials` array present.
-- For `Website`: a preview image (`public/preview-<slug>.png`).
+- A `thumbnail` is set (local PNG in `public/preview-<slug>.png` or absolute URL). GitHub Repo entries auto-default to the `opengraph.githubassets.com` OG image, so explicit thumbnails are only needed when the OG image looks weak.
 - `submittedBy` is a plausible handle.
 
 ### 4. Suggest an action
