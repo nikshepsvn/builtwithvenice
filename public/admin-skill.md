@@ -94,7 +94,7 @@ For every submission (issue or PR), check required signals. Missing a **required
 **Nice-to-have**
 - Tags reuse existing tags in the repo where reasonable.
 - `socials` array present.
-- A `thumbnail` is set (local PNG in `public/preview-<slug>.png` or absolute URL). GitHub Repo entries auto-default to the `opengraph.githubassets.com` OG image, so explicit thumbnails are only needed when the OG image looks weak.
+- A `thumbnail` is set (local PNG in `public/preview-<slug>.png` or absolute URL). GitHub Repo entries auto-default to `public/repo-previews/<owner>-<repo>.png` — populated by `npm run refresh-projects`, which pulls each repo's GitHub OG image. RepoCard falls back to the owner avatar (`https://github.com/<owner>.png`) at runtime if the prebaked file is missing. After merging a new project PR, run `npm run refresh-projects` to bake its preview.
 - `submittedBy` is a plausible handle.
 
 ### 4. Suggest an action
